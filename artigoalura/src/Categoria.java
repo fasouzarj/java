@@ -1,6 +1,5 @@
 
 public enum Categoria {
-    BACKEND
-   
+    BACKEND;
 
 }
