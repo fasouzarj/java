@@ -1,4 +1,4 @@
-
+package br.com.bytebank.banco.modelo;
 
 public class ContaCorrente extends Conta implements Tributavel {
 
@@ -7,14 +7,14 @@ public class ContaCorrente extends Conta implements Tributavel {
     }
 
     @Override
-    public void saca(double valor) throws SaldoInsuficienteException{
+    public void saca(double valor) throws SaldoInsuficienteException {
         double valorASacar = valor + .2;
         super.saca(valorASacar);
     }
 
     @Override
     public void deposita(double valor) {
-        super.saldo += valor; 
+        super.saldo += valor;
     }
 
     @Override
