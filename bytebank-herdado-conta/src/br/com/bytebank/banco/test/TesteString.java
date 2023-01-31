@@ -1,27 +1,28 @@
 package br.com.bytebank.banco.test;
 
+
 public class TesteString {
     public static void main(String[] args) {
        
-        String vazio = "    Alura    ";
-        String outroVazio = vazio.trim();
+        // String vazio = "    Alura    ";
+        // String outroVazio = vazio.trim();
 
-        System.out.println(vazio.contains("Alu"));
-        System.out.println(outroVazio);
+        // System.out.println(vazio.contains("Alu"));
+        // System.out.println(outroVazio);
 
-        System.out.println("outro vazio " + outroVazio.isEmpty());
-        System.out.println("outro vazio " + outroVazio.isBlank());
-        System.out.println("vazio " + vazio.isEmpty());
-        System.out.println("vazio " + vazio.isBlank());
+        // System.out.println("outro vazio " + outroVazio.isEmpty());
+        // System.out.println("outro vazio " + outroVazio.isBlank());
+        // System.out.println("vazio " + vazio.isEmpty());
+        // System.out.println("vazio " + vazio.isBlank());
 
-        String nome = "Alura"; // object literal
+        // String nome = "Alura"; // object literal
         // String outro = new String("Alura");
 
-        System.out.println(nome.length());
+        // System.out.println(nome.length());
 
-        for(int i = 0; i < nome.length(); i++) {
-            System.out.println(nome.charAt(i));
-        }
+        // for(int i = 0; i < nome.length(); i++) {
+        //     System.out.println(nome.charAt(i));
+        // }
 
         // String sub = nome.substring(1);
         // System.out.println(sub);
