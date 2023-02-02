@@ -1,50 +1,24 @@
 package br.com.bytebank.banco.test;
 
-import br.com.bytebank.banco.modelo.Cliente;
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
-import br.com.bytebank.banco.modelo.ContaPoupanca;
+import br.com.bytebank.banco.modelo.GuardadorDeContas;
 
 public class Teste {
     public static void main(String[] args) {
 
-        // System.out.println("x");
-        // System.out.println(3);
-        // System.out.println(false);
+        GuardadorDeContas guardador = new GuardadorDeContas();
 
-        ContaCorrente cc = new ContaCorrente(22, 33);
-        ContaPoupanca cp = new ContaPoupanca(33, 22);
-        Cliente cliente = new Cliente();
+        Conta cc = new ContaCorrente(22, 11);
+        guardador.adiciona(cc);
 
-        System.out.println(cc.toString());
-        System.out.println(cp);
+        Conta cc2 = new ContaCorrente(22, 22);
+        guardador.adiciona(cc2);
 
-        println(cc);
+        int tamanho = guardador.getQuantidadeDeElementos();
+        System.out.println(tamanho);
 
-        println(cp);
-
-        println(cliente);
+        Conta ref = guardador.getReferencia(0);
+        System.out.println(ref.getNumero());
     }
-
-    static void println() {
-    }
-
-    static void println(int a) {
-    }
-
-    static void println(boolean valor) {
-    }
-
-    static void println(Object conta) {
-    }
-
-    // static void println(Conta conta) {
-    // }
-
-    // static void println(ContaCorrente conta) {
-    // }
-
-    // static void println(ContaPoupanca conta) {
-    // }
-
 }
