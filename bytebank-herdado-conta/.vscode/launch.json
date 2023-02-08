@@ -6,9 +6,23 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch TesteEleEh",
+            "name": "Launch TesteWrapper",
             "request": "launch",
-            "mainClass": "br.com.bytebank.banco.test.util.TesteEleEh",
+            "mainClass": "br.com.bytebank.banco.test.util.TesteWrapper",
+            "projectName": "bytebank-herdado-conta_993b8d3b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteLinkedList",
+            "request": "launch",
+            "mainClass": "br.com.bytebank.banco.test.util.TesteLinkedList",
+            "projectName": "bytebank-herdado-conta_993b8d3b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteArrayList",
+            "request": "launch",
+            "mainClass": "br.com.bytebank.banco.test.util.TesteArrayList",
             "projectName": "bytebank-herdado-conta_993b8d3b"
         },
         {
@@ -30,6 +44,7 @@
             "name": "Launch Teste",
             "request": "launch",
             "mainClass": "br.com.bytebank.banco.test.util.Teste",
+            "args": "12",
             "projectName": "bytebank-herdado-conta_993b8d3b"
         },
         {
