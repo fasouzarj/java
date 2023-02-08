@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch TestaConexao",
+            "request": "launch",
+            "mainClass": "TestaConexao",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Quiz85",
+            "request": "launch",
+            "mainClass": "ex.Quiz85",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestaContaComExcecaoChecked",
+            "request": "launch",
+            "mainClass": "TestaContaComExcecaoChecked",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch FluxoComError",
+            "request": "launch",
+            "mainClass": "FluxoComError",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fluxo",
+            "request": "launch",
+            "mainClass": "ex.Fluxo",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch FluxoComTratamento",
+            "request": "launch",
+            "mainClass": "FluxoComTratamento",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Principal2",
+            "request": "launch",
+            "mainClass": "ex.Principal2",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fluxo",
+            "request": "launch",
+            "mainClass": "Fluxo",
+            "projectName": "java-pilha_27a221e6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Principal",
+            "request": "launch",
+            "mainClass": "ex.Principal",
+            "projectName": "java-pilha_27a221e6"
+        }
+    ]
+}
