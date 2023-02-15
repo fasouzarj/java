@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex04",
+            "request": "launch",
+            "mainClass": "br.com.bytebank.banco.ex.Ex04",
+            "projectName": "bytebank-herdado-conta_993b8d3b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteOutrosWrappers",
+            "request": "launch",
+            "mainClass": "br.com.bytebank.banco.test.util.TesteOutrosWrappers",
+            "projectName": "bytebank-herdado-conta_993b8d3b"
+        },
+        {
+            "type": "java",
             "name": "Launch TesteWrapper",
             "request": "launch",
             "mainClass": "br.com.bytebank.banco.test.util.TesteWrapper",
