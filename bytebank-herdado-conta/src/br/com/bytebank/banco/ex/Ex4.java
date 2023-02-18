@@ -3,7 +3,7 @@ package br.com.bytebank.banco.ex;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ex04 {
+public class Ex4 {
     public static void main(String[] args) {
         List referencias = new ArrayList(); // AQUI
         // List<Number> referencias = new ArrayList<>();
