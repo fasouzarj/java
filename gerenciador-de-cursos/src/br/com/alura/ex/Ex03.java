@@ -1,9 +1,8 @@
-package br.com.alura;
+package br.com.alura.ex;
 
 import java.util.ArrayList;
 
-public class Ex04 {
-
+public class Ex03 {
     public static void main(String[] args) {
 
         String curso1 = "Java 8: Tire proveito dos novos recursos da linguagem";
@@ -13,11 +12,8 @@ public class Ex04 {
         ArrayList<String> cursos = new ArrayList<>();
         cursos.add(curso1);
         cursos.add(curso2);
-        cursos.add(curso3);        
+        cursos.add(curso3);
 
-        for (int i = 0; i <= cursos.size(); i++) { //remover o = para evitar exception
-            System.out.println("Aula : " + cursos.get(i));
-        }
+        System.out.println("O primeiro curso da lista eh o: " + cursos.get(0)); // como acessar o primeiro valor?
     }
-    
 }

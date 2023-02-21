@@ -1,9 +1,9 @@
-package br.com.alura;
+package br.com.alura.ex;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
-public class Ex05 {
+public class Ex04 {
+
     public static void main(String[] args) {
 
         String curso1 = "Java 8: Tire proveito dos novos recursos da linguagem";
@@ -15,10 +15,9 @@ public class Ex05 {
         cursos.add(curso2);
         cursos.add(curso3);        
 
-        // codigo para ordenar a lista
-
-        Collections.sort(cursos);
-
-        System.out.println(cursos);
+        for (int i = 0; i <= cursos.size(); i++) { //remover o = para evitar exception
+            System.out.println("Aula : " + cursos.get(i));
+        }
     }
+    
 }
