@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex6",
+            "request": "launch",
+            "mainClass": "br.com.bytebank.banco.ex.Ex6",
+            "projectName": "bytebank-herdado-conta_993b8d3b"
+        },
+        {
+            "type": "java",
             "name": "Launch TesteSortArrays",
             "request": "launch",
             "mainClass": "br.com.bytebank.banco.test.util.TesteSortArrays",
