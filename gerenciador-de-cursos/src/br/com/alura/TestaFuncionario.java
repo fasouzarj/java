@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Teste {
+public class TestaFuncionario {
 
     public static void main(String args[]) {
 
