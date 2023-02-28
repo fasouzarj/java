@@ -1,5 +1,8 @@
 package br.com.alura;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class TestaCursoComAluno {
 
     public static void main(String[] args) {
@@ -18,9 +21,36 @@ public class TestaCursoComAluno {
         javaColecoes.matricula(a1);
         javaColecoes.matricula(a2);
         javaColecoes.matricula(a3);
-
+        
         System.out.println("Todos os alunos matriculados: ");
         javaColecoes.getAlunos().forEach(a -> System.out.println(a));
 
+        // ''' ini legacy code
+        // Set<Aluno> alunos = javaColecoes.getAlunos();
+        // Iterator<Aluno> iterador = alunos.iterator();
+        // while(iterador.hasNext()){
+        //     Aluno proximo = iterador.next();
+        //     System.out.println(proximo);
+        // }
+        // end legacy code'''
+        
+        System.out.println("O aluno " + a1 + " está matriculado?");
+        System.out.println(javaColecoes.estaMatriculado(a1));
+        
+        
+        Aluno turini = new Aluno("Rodrigo Turini", 34672);
+        System.out.println("E esse Turini, está matriculado?");
+        System.out.println(javaColecoes.estaMatriculado(turini));
+        
+
+        System.out.println("O a1 == ao Turini?");
+        // System.out.println(a1 == turini);
+        System.out.println(a1.equals(turini));
+
+
+        System.out.println(a1.hashCode());
+        System.out.println(turini.hashCode());
+
+        System.out.println(a1.hashCode() == turini.hashCode());;
     }
 }

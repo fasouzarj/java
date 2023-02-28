@@ -3,6 +3,7 @@ package br.com.alura.ex;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 // public class TestaPerformance
 
@@ -10,8 +11,9 @@ public class Ex08 {
 
     public static void main(String[] args) {
 
-        Collection<Integer> numeros = new ArrayList<Integer>();
-        // Collection<Integer> numeros = new HashSet<Integer>();
+        // Collection<Integer> numeros = new ArrayList<Integer>();
+        // Collection<Integer> numeros = new LinkedHashSet<Integer>();
+        Collection<Integer> numeros = new HashSet<Integer>();
 
         long inicio = System.currentTimeMillis();
 
