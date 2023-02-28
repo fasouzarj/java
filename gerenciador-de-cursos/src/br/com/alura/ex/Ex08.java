@@ -10,8 +10,8 @@ public class Ex08 {
 
     public static void main(String[] args) {
 
-        // Collection<Integer> numeros = new ArrayList<Integer>();
-        Collection<Integer> numeros = new HashSet<Integer>();
+        Collection<Integer> numeros = new ArrayList<Integer>();
+        // Collection<Integer> numeros = new HashSet<Integer>();
 
         long inicio = System.currentTimeMillis();
 
