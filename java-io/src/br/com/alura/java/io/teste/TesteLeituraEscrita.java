@@ -11,20 +11,27 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.Writer;
+import java.net.Socket;
 
-public class TesteIO {
+public class TesteLeituraEscrita {
     public static void main(String[] args) throws IOException {
 
-        InputStream fis = System.in;
+
+        Socket s = new Socket();
+        InputStream fis = s.getInputStream();
+        // InputStream fis = System.in;
+        // InputStream fis = new FileInputStream("lorem.txt");
         Reader isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
 
-        OutputStream fos = System.out;
+        // OutputStream fos = System.out;
+        // OutputStream fos = new FileOutputStream("lorem2.txt");
+        OutputStream fos = s.getOutputStream();
         Writer osw = new OutputStreamWriter(fos);
         BufferedWriter bw = new BufferedWriter(osw);
 
         String linha = br.readLine();
-        
+
         while (linha != null && !linha.isEmpty()) {
             bw.write(linha);
             bw.newLine();
