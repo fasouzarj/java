@@ -17,16 +17,16 @@ public class TesteLeituraEscrita {
     public static void main(String[] args) throws IOException {
 
 
-        Socket s = new Socket();
-        InputStream fis = s.getInputStream();
+        // Socket s = new Socket();
+        // InputStream fis = s.getInputStream();
         // InputStream fis = System.in;
-        // InputStream fis = new FileInputStream("lorem.txt");
+        InputStream fis = new FileInputStream("lorem.txt");
         Reader isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
 
+        // OutputStream fos = s.getOutputStream();
         // OutputStream fos = System.out;
-        // OutputStream fos = new FileOutputStream("lorem2.txt");
-        OutputStream fos = s.getOutputStream();
+        OutputStream fos = new FileOutputStream("lorem2.txt");
         Writer osw = new OutputStreamWriter(fos);
         BufferedWriter bw = new BufferedWriter(osw);
 

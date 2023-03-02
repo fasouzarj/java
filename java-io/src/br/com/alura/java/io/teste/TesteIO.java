@@ -1,39 +1,46 @@
 package br.com.alura.java.io.teste;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.io.Writer;
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class TesteIO {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
-        InputStream fis = System.in;
-        Reader isr = new InputStreamReader(fis);
-        BufferedReader br = new BufferedReader(isr);
+        Scanner scanner = new Scanner(new File("contas.csv"));
 
-        OutputStream fos = System.out;
-        Writer osw = new OutputStreamWriter(fos);
-        BufferedWriter bw = new BufferedWriter(osw);
+        while (scanner.hasNextLine()) {
+            String linha = scanner.nextLine();
+            // System.out.println(linha);
 
-        String linha = br.readLine();
-        
-        while (linha != null && !linha.isEmpty()) {
-            bw.write(linha);
-            bw.newLine();
-            bw.flush();
-            linha = br.readLine();
+            Scanner linhaScanner = new Scanner(linha);
+            linhaScanner.useLocale(Locale.US);
+            linhaScanner.useDelimiter(",");
+
+            String tipoConta = linhaScanner.next();
+            int agencia = linhaScanner.nextInt();
+            int numero = linhaScanner.nextInt();
+            String titular = linhaScanner.next();
+            double saldo = linhaScanner.nextDouble();
+
+            // String valorFormatado = String.format(new Locale("pt", "BR"),
+            // "%s - %04d-%08d, %20s: %08.2f", tipoConta, agencia, numero, titular, saldo);
+            // System.out.println(valorFormatado);
+            // System.out.println(valor1 + ", " + valor2 + ", " + valor3 + ", " + valor4 +
+            // ", " + valor5);
+            System.out.format(new Locale("pt", "BR"),
+                    "%s - %04d-%08d, %20s: %08.2f %n",
+                    tipoConta, agencia, numero, titular, saldo);
+
+            linhaScanner.close();
+            // String[] valores = linha.split(",");
+            // System.out.println(Arrays.toString(valores));
+            // System.out.println(valores[3]);
         }
 
-        br.close();
-        bw.close();
+        scanner.close();
 
     }
 }
