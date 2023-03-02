@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TesteDeSerializacao",
+            "request": "launch",
+            "mainClass": "br.com.bytebank.banco.test.io.TesteDeSerializacao",
+            "projectName": "bytebank-herdado-conta_993b8d3b"
+        },
+        {
+            "type": "java",
+            "name": "TesteSerializacao",
+            "request": "launch",
+            "mainClass": "br.com.bytebank.banco.test.io.TesteSerializacao",
+            "projectName": "bytebank-herdado-conta_993b8d3b"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex6",
             "request": "launch",
             "mainClass": "br.com.bytebank.banco.ex.Ex6",

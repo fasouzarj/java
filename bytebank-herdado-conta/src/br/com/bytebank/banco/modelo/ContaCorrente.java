@@ -1,7 +1,5 @@
 package br.com.bytebank.banco.modelo;
 
-
-
 public class ContaCorrente extends Conta implements Tributavel {
 
     public ContaCorrente(int agencia, int numero) {
@@ -26,13 +24,12 @@ public class ContaCorrente extends Conta implements Tributavel {
 
     // @Override
     // public String toString() {
-    //     return "ContaCorrente, Numero: " + super.getNumero();
+    // return "ContaCorrente, Numero: " + super.getNumero();
     // }
 
     @Override
     public String toString() {
         return "ContaCorrente, " + super.toString();
     }
-
 
 }
